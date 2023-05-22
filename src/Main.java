@@ -2,16 +2,24 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // declare variables for number (int) to check and result
+        int numToCheck = 12;
+        int moduloResult = 0;
+        String result = "";
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // take modulo to indicate if number is even or odd
+        moduloResult = numToCheck % 2;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        // checks if the result is 0 or 1 and sets the result string for output
+        if (moduloResult == 0) { // if 0, number is even
+            result = "The number " + numToCheck + " is even.";
+        } else { // if not 0, number is odd
+            result = "The number " + numToCheck + " is odd.";
         }
+
+        // output the result
+        System.out.println(result);
+
+
     }
 }
